@@ -1,3 +1,12 @@
-.pv-container{
+.pv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80vw;
+}
 
+.pv-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }

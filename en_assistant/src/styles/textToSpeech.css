@@ -1,0 +1,26 @@
+.tts-container{
+    width: 50%;
+    background: black;
+    border: white solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tts-sentence{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tts-word{
+    background: transparent;
+    color: white;
+}
+
+.tts-word:hover{
+    background: gray;
+    color: white;
+    border: white solid 0px;
+    border-radius: 5px;
+}
