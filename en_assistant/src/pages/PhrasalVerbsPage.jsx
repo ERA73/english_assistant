@@ -3,8 +3,8 @@ import TextToSpeech from '../components/TextToSpeech'
 
 export function PhrasalVerbsPage() {
     const experiences = [
-        { "past": ["add", "up"], "present": ["add", "up"] },
-        { "past": ["blow", "up"], "present": ["blow", "up"] },
+        { "present": ["add", "up"], "pronunciation": "adap","meaning": ["sumar", "agregar", "creer"], },
+        { "present": ["blow", "up"], "pronunciation": "blouap", "meaning": ["inflar", "explotar"],  },
     ]
     const en_voices = [
         'Google US English',
@@ -15,14 +15,14 @@ export function PhrasalVerbsPage() {
         'Google español',
         'Google español de Estados Unidos'
     ]
-    const voice = en_voices[1];
+    const en_voice = en_voices[1];
+    const es_voice = es_voices[0];
     const rate = 0.8;
     return (
         <div className='pv-container'>
             {experiences.map(data => (
                 <div className='pv-row'>
-                    <TextToSpeech text={data["past"]} voice={voice} rate={rate} />
-                    <TextToSpeech text={data["present"]} voice={voice} rate={rate} />
+                    <TextToSpeech data={data} en_voice={en_voice} es_voice={es_voice} rate={rate} />
                 </div>
             ))}
         </div>

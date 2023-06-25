@@ -4,7 +4,6 @@ import { BsPlayCircle } from 'react-icons/bs';
 
 class TextToSpeech extends React.Component {
   speak = (text, selected_voice, rate) => {
-    console.log(text, selected_voice, rate)
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.voice = window.speechSynthesis.getVoices().find(voice => voice.name === selected_voice);
     utterance.rate = rate;
@@ -12,19 +11,32 @@ class TextToSpeech extends React.Component {
   };
 
   render() {
-    const { text, voice, rate } = this.props;
+    const { data, en_voice, es_voice, rate } = this.props;
+    const text = data["present"]
+    const meaning = data["meaning"]
+    const pronunciation = data["pronunciation"]
     return (
       <div className='tts-container'>
         <div className='tts-sentence'>
+          <button className='tts-play' onClick={() => this.speak(text.join(" "), en_voice, rate)}>
+            <BsPlayCircle />
+          </button>
           {text.map(word => (
-            <button className='tts-word' onClick={() => this.speak(word, voice, rate)}>
+            <button className='tts-word' onClick={() => this.speak(word, en_voice, rate)}>
               {word}
             </button>
           ))}
         </div>
-        <button onClick={() => this.speak(text.join(" "), voice, rate)}>
-          <BsPlayCircle />
-        </button>
+        <div className='tts-pronunciation'>
+          <button className='tts-word' onClick={() => this.speak(pronunciation, es_voice, rate)}>
+            {pronunciation}
+          </button>
+        </div>
+        <div className='tts-meaning'>
+          <button className='tts-word' onClick={() => this.speak(meaning.join(", "), es_voice, rate)}>
+            {meaning.join(", ")}
+          </button>
+        </div>
       </div>
     );
   }
