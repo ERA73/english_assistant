@@ -1,5 +1,5 @@
 .tts-container{
-    width: 50%;
+    width: 80%;
     background: darkseagreen;
     border: white solid 0px;
     border-radius: 5px;
@@ -61,6 +61,9 @@
  }
 
 @media screen and (min-aspect-ratio: 16 / 9) {
+    .tts-container{
+        width: 80%;
+    }
     .tts-word{
         font-size: clamp(16px, 1.3vw, 22px);;
     }
