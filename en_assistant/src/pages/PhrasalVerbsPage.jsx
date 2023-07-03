@@ -1,11 +1,15 @@
 import '../styles/phrasalverbs.css'
 import TextToSpeech from '../components/TextToSpeech'
+import data from '../data/phrasal_verbs.json';
 
 export function PhrasalVerbsPage() {
-    const experiences = [
-        { "present": ["add", "up"], "pronunciation": "adap","meaning": ["sumar", "agregar", "creer"], },
-        { "present": ["blow", "up"], "pronunciation": "blouap", "meaning": ["inflar", "explotar"],  },
-    ]
+    
+    data.sort((a, b)=>{
+        return a.present.join(" ").localeCompare(b.present.join(" "))
+    })
+    console.log(data)
+    const experiences = data
+    
     const en_voices = [
         'Google US English',
         'Google UK English Female',
@@ -15,7 +19,7 @@ export function PhrasalVerbsPage() {
         'Google español',
         'Google español de Estados Unidos'
     ]
-    const en_voice = en_voices[1];
+    const en_voice = en_voices[0];
     const es_voice = es_voices[0];
     const rate = 0.8;
     return (

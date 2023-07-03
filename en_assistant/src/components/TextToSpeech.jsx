@@ -21,15 +21,17 @@ class TextToSpeech extends React.Component {
           <button className='tts-play' onClick={() => this.speak(text.join(" "), en_voice, rate)}>
             <BsPlayCircle />
           </button>
+          <div className='tts_words_list'>
           {text.map(word => (
-            <button className='tts-word' onClick={() => this.speak(word, en_voice, rate)}>
+            <button className='tts-main-word' onClick={() => this.speak(word, en_voice, rate)}>
               {word}
             </button>
           ))}
+          </div>
         </div>
         <div className='tts-pronunciation'>
           <button className='tts-word' onClick={() => this.speak(pronunciation, es_voice, rate)}>
-            {pronunciation}
+            {pronunciation.replace(" ", "")}
           </button>
         </div>
         <div className='tts-meaning'>

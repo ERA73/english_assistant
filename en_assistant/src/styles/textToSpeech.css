@@ -5,35 +5,50 @@
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px;
+    gap: 5px;
 }
 
 .tts-sentence{
+    min-width: 33%;
     display: flex;
-    justify-content: flex-start;
     gap: 5px;
     background: darkgreen;
     border-radius: 5px;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.tts_words_list{
+    display: flex;
+    min-width: 60%;
+    justify-content: center;
+    width: 100%;
+}
+
+.tts-pronunciation{
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: darkorange;
+    border-radius: 5px;
+    flex-grow: 1;
 }
 
 .tts-meaning{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5px;
     background: darkcyan;
     border-radius: 5px;
+    flex-grow: 2;
 }
 
-.tts-pronunciation{
-    display: flex;
-    justify-content: flex-start;
-    gap: 5px;
-    background: darkorange;
-    border-radius: 5px;
-}
-
-.tts-word{
+.tts-word, .tts-main-word{
     background: transparent;
     color: white;
     border: white solid 0px;
@@ -41,7 +56,11 @@
     padding: 3px;
 }
 
-.tts-word:hover{
+.tts-word{
+    flex-grow: 1;
+}
+
+.tts-word:hover, .tts-main-word:hover{
     background: gray;
     color: white;
     border: white solid 0px;
