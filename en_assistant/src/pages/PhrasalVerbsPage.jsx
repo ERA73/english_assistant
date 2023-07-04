@@ -7,20 +7,20 @@ export function PhrasalVerbsPage() {
     data.sort((a, b)=>{
         return a.present.join(" ").localeCompare(b.present.join(" "))
     })
-    console.log(data)
     const experiences = data
     
     const en_voices = [
-        'Google US English',
-        'Google UK English Female',
-        'Google UK English Male',
+        'Microsoft Zira - English (United States)',
+        'Microsoft David - English (United States)',
+        'Microsoft Zira - English (United States)',
+        'Microsoft David - English (United States)'
     ]
     const es_voices = [
-        'Google español',
-        'Google español de Estados Unidos'
+        'Microsoft Laura - Spanish (Spain)',
+        'Microsoft Pablo - Spanish (Spain)'
     ]
-    const en_voice = en_voices[0];
-    const es_voice = es_voices[0];
+    const en_voice = en_voices[2];
+    const es_voice = es_voices[1];
     const rate = 0.8;
     return (
         <div className='pv-container'>
