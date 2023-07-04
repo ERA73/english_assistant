@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { PhrasalVerbsPage } from './pages/phrasalVerbsPage'
+import { PhrasalVerbsPage } from './pages/PhrasalVerbsPage'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
 
