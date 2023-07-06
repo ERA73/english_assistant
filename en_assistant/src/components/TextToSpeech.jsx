@@ -14,7 +14,8 @@ class TextToSpeech extends React.Component {
     const { data, en_voice, es_voice, rate } = this.props;
     const text = data["present"]
     const meaning = data["meaning"]
-    const pronunciation = data["pronunciation"]
+    const read = data["pronunciation"]["read"]
+    const show = data["pronunciation"]["show"]
     return (
       <div className='tts-container'>
         <div className='tts-sentence'>
@@ -30,8 +31,8 @@ class TextToSpeech extends React.Component {
           </div>
         </div>
         <div className='tts-pronunciation'>
-          <button className='tts-word' onClick={() => this.speak(pronunciation, es_voice, rate)}>
-            {pronunciation.replace(" ", "")}
+          <button className='tts-word' onClick={() => this.speak(read, es_voice, rate)}>
+            {show.replace(" ", "")}
           </button>
         </div>
         <div className='tts-meaning'>
