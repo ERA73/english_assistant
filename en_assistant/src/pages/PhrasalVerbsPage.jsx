@@ -3,25 +3,57 @@ import TextToSpeech from '../components/TextToSpeech'
 import data from '../data/phrasal_verbs.json';
 
 export function PhrasalVerbsPage() {
-    
-    data.sort((a, b)=>{
+
+    data.sort((a, b) => {
         return a.present.join(" ").localeCompare(b.present.join(" "))
     })
     const experiences = data
-    
-    const en_voices = [
-        'Microsoft Zira - English (United States)',
-        'Microsoft David - English (United States)',
-        'Microsoft Zira - English (United States)',
-        'Microsoft David - English (United States)'
-    ]
-    const es_voices = [
-        'Microsoft Laura - Spanish (Spain)',
-        'Microsoft Pablo - Spanish (Spain)'
-    ]
-    const en_voice = en_voices[2];
-    const es_voice = es_voices[1];
-    const rate = 0.8;
+
+    const voices_SSU = {
+        "en": [
+            'Microsoft Zira - English (United States)',
+            'Microsoft David - English (United States)',
+            'Microsoft Zira - English (United States)',
+            'Microsoft David - English (United States)'
+        ],
+        "es": [
+            'Microsoft Laura - Spanish (Spain)',
+            'Microsoft Pablo - Spanish (Spain)'
+        ]
+    }
+
+    const voices_RV = {
+        "en": [
+            "UK English Female",
+            "UK English Male",
+            "US English Female",
+            "US English Male",
+            "Australian Female"
+        ],
+        "es": [
+            "Spanish Latin American Female",
+            "Spanish Latin American Male",
+            "Spanish Peninsular Female",
+            "Spanish Peninsular Male"
+        ]
+    }
+    const voices_RV2 = {
+        "en": [
+            "English (US)",
+            "English (UK)",
+            "English (Australia)",
+            "English (India)"
+        ],
+        "es": [
+            "Español (España)",
+            "Español (México)",
+            "Español (Argentina)",
+            "Español (Colombia)"
+        ]
+    }
+    const en_voice = voices_SSU["en"][0];
+    const es_voice = voices_SSU["es"][0];
+    const rate = 1;
     return (
         <div className='pv-container'>
             {experiences.map(data => (

@@ -72,6 +72,7 @@
     width: auto;
     height: 100%;
     background: greenyellow;
+    aspect-ratio: 1;
 }
 
 .tts-play svg{
