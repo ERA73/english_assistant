@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { PhrasalVerbsPage } from './pages/PhrasalVerbsPage'
+import { AuxiliaryContractionsPage } from './pages/AuxiliaryContractionsPage'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             {/* <Route path='/' element={<HomePage />} /> */}
             <Route path='/phrasalverbs' element={<PhrasalVerbsPage />} />
+            <Route path='/auxcontractions' element={<AuxiliaryContractionsPage />} />
           </Routes>
         </div>
       </BrowserRouter>

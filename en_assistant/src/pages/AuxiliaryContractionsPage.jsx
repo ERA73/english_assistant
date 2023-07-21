@@ -1,12 +1,12 @@
-import '../styles/phrasalverbs.css'
+import '../styles/auxiliaryContractions.css'
 import TextToSpeech from '../components/TextToSpeech'
-import data from '../data/phrasal_verbs.json';
+import data from '../data/auxiliary_contractions.json';
 
-export function PhrasalVerbsPage() {
+export function AuxiliaryContractionsPage() {
 
-    data.sort((a, b) => {
-        return a.present.join(" ").localeCompare(b.present.join(" "))
-    })
+    // data.sort((a, b) => {
+    //     return a.present.join(" ").localeCompare(b.present.join(" "))
+    // })
     const experiences = data
 
     const voices_SSU = {
@@ -67,12 +67,16 @@ export function PhrasalVerbsPage() {
     const en_voice = voices_glgl["en"][0];
     const es_voice = voices_glgl["es"][0];
     const rate = 0.8;
-
     return (
         <div className='pv-container'>
-            {experiences.map(data => (
-                <div className='pv-row'>
-                    <TextToSpeech english={data["present"]} meaning={data["meaning"]} read={data["pronunciation"]["read"]} show={data["pronunciation"]["show"]} en_voice={en_voice} es_voice={es_voice} rate={rate} />
+            {experiences.map(item => (
+                <div>
+                    <h1 className='pv-title'>{item["name"].replace("_", " ")}</h1>
+                {item["data"].map(data => (
+                    <div className='pv-row'>
+                        <TextToSpeech english={data["large"]} short={data["short"]} meaning={data["meaning"]} en_voice={en_voice} es_voice={es_voice} rate={rate} />
+                    </div>
+                ))}
                 </div>
             ))}
         </div>

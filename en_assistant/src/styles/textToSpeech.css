@@ -29,6 +29,16 @@
     width: 100%;
 }
 
+.tts-short{
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: darkorange;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
 .tts-pronunciation{
     min-width: 33%;
     display: flex;

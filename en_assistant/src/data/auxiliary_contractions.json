@@ -1,0 +1,106 @@
+[
+    {
+        "name":"to_be",
+        "data":[
+            {"large": ["i", "am"],"short": "i'm","meaning": ["Yo soy", "Yo estoy"]},
+            {"large": ["you", "are"],"short": "you're","meaning": ["Tu eres", "Tu estás", "Ustedes son", "Ustedes están"]},
+            {"large": ["they", "are"],"short": "they're","meaning": ["Ellos son", "Ellos están"]},
+            {"large": ["we", "are"],"short": "we're","meaning": ["Nosotros somos", "Nosotros estamos"]},
+            {"large": ["he", "is"],"short": "he's","meaning": ["Él es", "'El está"]},
+            {"large": ["she", "is"],"short": "she's","meaning": ["Ella es", "Ella está"]},
+            {"large": ["it", "is"],"short": "it's","meaning": ["Eso es", "Eso está"]}
+        ]
+    },
+    {
+        "name":"negatives",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"have_has",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"w_questions",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"there",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"will",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"would",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"should",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"could",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    },
+    {
+        "name":"must",
+        "data":[
+            {"large": ["", ""],"short": "","meaning": ["", ""]},
+            {"large": ["", ""],"short": "","meaning": ["", ""]}
+        ]
+    }
+]
