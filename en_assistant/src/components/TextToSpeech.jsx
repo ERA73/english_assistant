@@ -20,7 +20,7 @@ class TextToSpeech extends React.Component {
   };
   
   speak = (text, selected_voice, rate) => {
-    this.speak_RV(text, selected_voice, rate);
+    this.speak_SSU(text, selected_voice, rate);
   };
   // speak_RV = (text, selected_voice, rate) => {
   //   responsiveVoice.speak(text, selected_voice, {rate:rate});

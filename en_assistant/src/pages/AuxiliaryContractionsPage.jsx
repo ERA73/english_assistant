@@ -66,7 +66,7 @@ export function AuxiliaryContractionsPage() {
     }
     const en_voice = voices_glgl["en"][0];
     const es_voice = voices_glgl["es"][0];
-    const rate = 0.8;
+    const rate = 0.7;
     return (
         <div className='pv-container'>
             {experiences.map(item => (
@@ -74,7 +74,7 @@ export function AuxiliaryContractionsPage() {
                     <h1 className='pv-title'>{item["name"].replace("_", " ")}</h1>
                 {item["data"].map(data => (
                     <div className='pv-row'>
-                        <TextToSpeech english={data["large"]} short={data["short"]} meaning={data["meaning"]} en_voice={en_voice} es_voice={es_voice} rate={rate} />
+                        <TextToSpeech english={data["large"].split(" ")} short={data["short"]} meaning={data["meaning"].split("|")} en_voice={en_voice} es_voice={es_voice} rate={rate} />
                     </div>
                 ))}
                 </div>
