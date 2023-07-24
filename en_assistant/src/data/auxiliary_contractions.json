@@ -14,10 +14,10 @@
     {
         "name":"negatives",
         "data":[
-            {"large": "is not","short": "isn't","meaning": "No es|No esta"},
-            {"large": "are not","short": "aren't","meaning": "No eres|No estas|No son|No estan"},
+            {"large": "is not","short": "isn't","meaning": "No es|No está"},
+            {"large": "are not","short": "aren't","meaning": "No eres|No estas|No son|No están"},
             {"large": "was not","short": "wasn't","meaning": "No era|No estaba|No eras|No estabas"},
-            {"large": "were not","short": "weren't","meaning": "No eran|No estaban|No eramos|No estabamos"},
+            {"large": "were not","short": "weren't","meaning": "No eran|No estaban|No éramos|No estábamos"},
             {"large": "do not","short": "don't","meaning": "Negación en presente primera persona"},
             {"large": "does not","short": "doesn't","meaning": "Negación en presente tercera persona"},
             {"large": "did not","short": "didn't","meaning": "Negación en pasado"},
@@ -27,37 +27,36 @@
             {"large": "can not","short": "can't","meaning": "No puedo|No puedes|etc"},
             {"large": "could not","short": "couldn't","meaning": "No pude|No pudiste|etc"},
             {"large": "must not","short": "mustn't","meaning": "No debo|No puedo|No debes|No puedes|etc"},
-            {"large": "should not","short": "shouldn't","meaning": "No deberia|No deberias|No deberian|No deberiamos"},
+            {"large": "should not","short": "shouldn't","meaning": "No debería|No deberías|No deberían|No deberíamos"},
             {"large": "will not","short": "won't","meaning": "Negación en futuro"},
             {"large": "shall not","short": "shan't","meaning": "Negación en futuro"},
-            {"large": "ought not","short": "oughtn't","meaning": "No se espera que pase o No deberias hacer"},
-            {"large": "dare not","short": "daren't","meaning": "No deberias atreverte a hacer"},
+            {"large": "ought not","short": "oughtn't","meaning": "No se espera que pase o No deberías hacer"},
+            {"large": "dare not","short": "daren't","meaning": "No deberías atreverte a hacer"},
             {"large": "need not","short": "needn't","meaning": "No necesitas hacer"},
-            {"large": "durst not","short": "durstn't","meaning": "No se atreve hacer"},
-            {"large": "","short": "","meaning": ""}
+            {"large": "durst not","short": "durstn't","meaning": "No se atreve hacer"}
         ]
     },
     {
         "name":"have_has",
         "data":[
-            {"large": "i have","short": "i've","meaning": ""},
-            {"large": "you have","short": "you've","meaning": ""},
-            {"large": "he has","short": "he's","meaning": ""},
-            {"large": "she has","short": "she's","meaning": ""},
-            {"large": "it has","short": "it's","meaning": ""},
-            {"large": "they have","short": "they've","meaning": ""},
-            {"large": "we have","short": "we've","meaning": ""}
+            {"large": "i have","short": "i've","meaning": "Yo he"},
+            {"large": "you have","short": "you've","meaning": "Tú has"},
+            {"large": "he has","short": "he's","meaning": "Él ha"},
+            {"large": "she has","short": "she's","meaning": "Ella ha"},
+            {"large": "it has","short": "it's","meaning": "Eso ha"},
+            {"large": "they have","short": "they've","meaning": "Ellos han"},
+            {"large": "we have","short": "we've","meaning": "Nosotros hemos"}
         ]
     },
     {
         "name":"w_questions",
         "data":[
-            {"large": "what is","short": "what's","meaning": ""},
-            {"large": "who is","short": "who's","meaning": ""},
-            {"large": "how is","short": "how's","meaning": ""},
-            {"large": "where is","short": "where's","meaning": ""},
-            {"large": "when is","short": "when's","meaning": ""},
-            {"large": "why is","short": "why's","meaning": ""}
+            {"large": "what is","short": "what's","meaning": "¿Qué es?"},
+            {"large": "who is","short": "who's","meaning": "¿Quién es?"},
+            {"large": "how is","short": "how's","meaning": "¿Como es?"},
+            {"large": "where is","short": "where's","meaning": "¿Dónde es?"},
+            {"large": "when is","short": "when's","meaning": "¿Cuándo es?"},
+            {"large": "why is","short": "why's","meaning": "¿Por qué es?"}
         ]
     },
     {
@@ -75,36 +74,39 @@
     {
         "name":"would",
         "data":[
-            {"large": "i would","short": "i'd","meaning": ""},
-            {"large": "you would","short": "you'd","meaning": ""},
-            {"large": "he would","short": "he'd","meaning": ""},
-            {"large": "she would","short": "she'd","meaning": ""},
-            {"large": "it would","short": "it'd","meaning": ""},
-            {"large": "they would","short": "they'd","meaning": ""},
-            {"large": "we would","short": "we'd","meaning": ""}
+            {"large": "i would","short": "i'd","meaning": "Futuro condicional, yo necesitaRÍA"},
+            {"large": "you would","short": "you'd","meaning": "Futuro condicional, te gustaRÍA"},
+            {"large": "he would","short": "he'd","meaning": "Futuro condicional, él necesitaRÍA"},
+            {"large": "she would","short": "she'd","meaning": "Futuro condicional, ella usaRÍA"},
+            {"large": "it would","short": "it'd","meaning": "Futuro condicional, eso caminaRÍA"},
+            {"large": "they would","short": "they'd","meaning": "Futuro condicional, ellos cocinaRÍAN"},
+            {"large": "we would","short": "we'd","meaning": "Futuro condicional, nosotros ayudaRÍAMOS"}
         ]
     },
     {
         "name":"had",
         "data":[
-            {"large": "i had","short": "i'd","meaning": ""},
-            {"large": "you had","short": "you'd","meaning": ""},
-            {"large": "he had","short": "he'd","meaning": ""},
-            {"large": "she had","short": "she'd","meaning": ""},
-            {"large": "it had","short": "it'd","meaning": ""},
-            {"large": "they had","short": "they'd","meaning": ""},
-            {"large": "we had","short": "we'd","meaning": ""}
+            {"large": "i had","short": "i'd","meaning": "Yo había"},
+            {"large": "you had","short": "you'd","meaning": "Tú habías"},
+            {"large": "he had","short": "he'd","meaning": "Él había"},
+            {"large": "she had","short": "she'd","meaning": "Ella había"},
+            {"large": "it had","short": "it'd","meaning": "Eso había"},
+            {"large": "they had","short": "they'd","meaning": "Ellos habían"},
+            {"large": "we had","short": "we'd","meaning": "Nosotros habíamos"}
         ]
     },
     {
         "name":"extra",
         "data":[
-            {"large": "there is","short": "there's","meaning": ""},
-            {"large": "there are","short": "there're","meaning": ""},
-            {"large": "that is","short": "that's","meaning": ""},
-            {"large": "let is","short": "let's","meaning": ""},
+            {"large": "there is","short": "there's","meaning": "Hay, en singular"},
+            {"large": "there are","short": "there're","meaning": "Hay, en plural"},
+            {"large": "that is","short": "that's","meaning": "Eso es"},
+            {"large": "let is","short": "let's","meaning": "Invitasión, vamos a, hagamos"},
             {"large": "could have","short": "could've","meaning": "pude haber|pudiste haber|etc"},
             {"large": "must have","short": "must've","meaning": "debí haber|debiste haber|etc"}
         ]
     }
 ]
+
+
+
