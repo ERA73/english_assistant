@@ -1,0 +1,90 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.home-title {
+  height: 10vh;
+  width: 80vw;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home-example {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 80vw;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.home-text {
+  display: flex;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-link {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--emphasisColor);
+  border-radius: 25px;
+  background-color: midnightblue;
+  padding: 8px 12px;
+  transition: 0.5s;
+}
+
+.home-link:hover {
+  color: midnightblue;
+  background-color: var(--emphasisColor);
+  padding: 10px 15px;
+  transition: 0.5s;
+  padding-right: 25px;
+}
+
+.home-link span {
+  min-width: 0px;
+  max-width: 0px;
+  left: 10px;
+  right: -10px;
+  color: rgba(25, 25, 112, 0);
+}
+
+.home-link:hover span:after {
+  content: '\00bb';
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  min-width: 10px;
+  max-width: 10px;
+  left: -10px;
+  right: 10px;
+  transition: 0.5s;
+}
