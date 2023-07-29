@@ -15,7 +15,8 @@ export function HomePage() {
             </div>
             <div className='home-links'>
                 <a className='home-link' href="/phrasalverbs">Phrasal Verbs<span></span></a>
-                <a className='home-link' href="/auxcontractions">Aux Contractions<span></span></a>
+                <a className='home-link' href="/auxcontractions">Auxiliary Contractions<span></span></a>
+                <a className='home-link' href="/infcontractions">Informal Contractions<span></span></a>
             </div>
         </div>
     )

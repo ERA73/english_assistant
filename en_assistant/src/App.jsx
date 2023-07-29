@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Navigation } from './components/Navigation'
+import { Footer } from './components/Footer'
 import { HomePage} from './pages/HomePage'
 import { PhrasalVerbsPage } from './pages/PhrasalVerbsPage'
 import { AuxiliaryContractionsPage } from './pages/AuxiliaryContractionsPage'
-import { Navigation } from './components/Navigation'
-import { Footer } from './components/Footer'
+import { InformalContractionsPage } from './pages/InformalContractionsPage'
 
 function App() {
   const hideNavbar = (event) => {
@@ -23,6 +24,7 @@ function App() {
             <Route path='/' element={<HomePage />} />
             <Route path='/phrasalverbs' element={<PhrasalVerbsPage />} />
             <Route path='/auxcontractions' element={<AuxiliaryContractionsPage />} />
+            <Route path='/infcontractions' element={<InformalContractionsPage />} />
           </Routes>
         </div>
       </BrowserRouter>
