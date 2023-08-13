@@ -34,7 +34,7 @@ class TextToSpeech extends React.Component {
   // };
 
   render() {
-    const { english, meaning, short="", read="", show="", en_voice, es_voice, rate } = this.props;
+    const { english, meaning, short="", past="", participle="", read="", show="", en_voice, es_voice, rate } = this.props;
     return (
       <div className='tts-container'>
         <div className='tts-sentence'>
@@ -53,6 +53,22 @@ class TextToSpeech extends React.Component {
         <div className='tts-short'>
           <button className='tts-word' onClick={() => this.speak(short, en_voice, rate)}>
             {short.replace(" ", "")}
+          </button>
+        </div>
+        ) : null
+        }
+        { past !== "" ?(
+        <div className='tts-past'>
+          <button className='tts-word' onClick={() => this.speak(past, en_voice, rate)}>
+            {past.replace(" ", "")}
+          </button>
+        </div>
+        ) : null
+        }
+        { participle !== "" ?(
+        <div className='tts-participle'>
+          <button className='tts-word' onClick={() => this.speak(participle, en_voice, rate)}>
+            {participle.replace(" ", "")}
           </button>
         </div>
         ) : null
