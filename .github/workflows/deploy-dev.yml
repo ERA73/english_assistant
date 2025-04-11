@@ -40,5 +40,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          publish_dir: en_assistant/dist
+          publish_dir: en_assistant
           # Asegúrate que ese sea el directorio de salida del build
