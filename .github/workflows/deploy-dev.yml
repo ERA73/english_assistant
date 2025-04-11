@@ -18,21 +18,15 @@ jobs:
         with:
           node-version: '18' # Ajusta según la versión que necesites
 
-      - name: Config SSH
-        run: |
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-
       - name: Install dependencies and build
         run: |
           cd en_assistant
           npm install
           npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy via SSH
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_dir: en_assistant/dist
           # Asegúrate que ese sea el directorio de salida del build
