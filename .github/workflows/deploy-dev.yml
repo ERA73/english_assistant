@@ -32,6 +32,10 @@ jobs:
           npm install
           npm run build
 
+      - name: Forzar inclusión de archivos ignorados
+        run: |
+          git add -f en_assistant/dist
+
       - name: Deploy via SSH
         uses: peaceiris/actions-gh-pages@v3
         with:
