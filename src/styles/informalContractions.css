@@ -1,0 +1,47 @@
+.icontractoins-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #252525
+}
+
+.icontractoins-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.icontractoins-item h2 {
+  display: flex;
+  width: 80%;
+  min-height: 5vh;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #AAA;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: black;
+  font-size: 2rem;
+}
+
+.icontractoins-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.icontractoins-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}

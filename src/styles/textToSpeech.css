@@ -1,0 +1,100 @@
+.tts-container{
+    width: 80%;
+    background: darkseagreen;
+    border: white solid 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 5px;
+}
+
+.tts-sentence{
+    min-width: 33%;
+    display: flex;
+    gap: 5px;
+    background: darkgreen;
+    border-radius: 5px;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.tts_words_list{
+    display: flex;
+    min-width: 60%;
+    justify-content: center;
+    width: 100%;
+}
+
+.tts-short{
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: darkorange;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.tts-pronunciation{
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: darkorange;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.tts-meaning{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: darkcyan;
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
+.tts-word, .tts-main-word{
+    background: transparent;
+    color: white;
+    border: white solid 0px;
+    font-size: clamp(16px, 1.3vw, 18px);
+    padding: 3px;
+}
+
+.tts-word{
+    flex-grow: 1;
+}
+
+.tts-word:hover, .tts-main-word:hover{
+    background: gray;
+    color: white;
+    border: white solid 0px;
+    border-radius: 5px;
+}
+
+.tts-play{
+    border-radius: 20px;
+    width: auto;
+    height: 100%;
+    background: greenyellow;
+    aspect-ratio: 1;
+}
+
+.tts-play svg{
+    width: inherit;
+    height: inherit;
+ }
+
+@media screen and (min-aspect-ratio: 16 / 9) {
+    .tts-container{
+        width: 80%;
+    }
+    .tts-word{
+        font-size: clamp(16px, 1.3vw, 22px);;
+    }
+}

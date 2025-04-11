@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primaryColor:rgb(20, 20, 20);
+  --secondaryColor:rgb(48, 48, 48);
+  --tertiaryColor:rgb(48, 48, 48);
+  --emphasisColor:lightskyblue;
+  --titleColor:lightsteelblue;
+  --textColor:white;
+  --gradient1:rgba(20, 20, 20, 0);
+  --gradient2:rgba(20, 20, 20, 0.5);
+  --gradient3:rgba(20, 20, 20, 1);
+}
+
+html {
+  font-size: 15px;
+}
+
+label, input, textarea, h1, h2, h3, h4, h5, p, span, a {
+  font-family: 'Ubuntu';
+  /* font-family: "Times New Roman"; */
+  /* font-family: Times; */
+  /* font-family: serif; */
+  /* font-family: Arial; */
+  /* font-family:Helvetica; */
+  /* font-family:sans-serif; */
+}
+
+body{
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+}
+
+.main-container{
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.container{
+  padding-top: 10vh;
+}
+
+/* footer{
+  display: flex;
+  position: relative;
+  align-self: end;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: var(--tertiaryColor);
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+} */
