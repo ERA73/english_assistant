@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: '18' # Ajusta según la versión que necesites
 
+      - name: Config SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
       - name: Install dependencies and build
         run: |
           cd en_assistant
