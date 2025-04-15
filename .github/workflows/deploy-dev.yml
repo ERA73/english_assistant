@@ -34,7 +34,6 @@ jobs:
         run: |
           cd en_assistant
           npm ci
-          npm install
 
       - name: Build
         run: npm run build
