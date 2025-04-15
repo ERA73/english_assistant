@@ -36,14 +36,16 @@ jobs:
           npm ci
 
       - name: Build
-        run: npm run build
+        run: |
+          cd en_assistant
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './dist'
+          path: './en_assistant/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
