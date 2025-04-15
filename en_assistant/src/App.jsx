@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
 import { HomePage} from './pages/HomePage'
@@ -17,7 +17,7 @@ function App() {
   }
   return (
     <div className='main-container' onClick={hideNavbar}>
-      <BrowserRouter>
+      <HashRouter>
         <Navigation />
         <div className='container'>
           <Routes>
@@ -27,7 +27,7 @@ function App() {
             <Route path='/infcontractions' element={<InformalContractionsPage />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   )
