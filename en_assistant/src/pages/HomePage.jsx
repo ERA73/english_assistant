@@ -15,9 +15,9 @@ export function HomePage() {
                 <p className='home-text'>We hope this content can help you improve your English skills. Enjoy it!</p>
             </div>
             <div className='home-links'>
-                <Link className='home-link' href="/phrasalverbs">Phrasal Verbs<span></span></Link>
-                <Link className='home-link' href="/auxcontractions">Auxiliary Contractions<span></span></Link>
-                <Link className='home-link' href="/infcontractions">Informal Contractions<span></span></Link>
+                <Link className='home-link' to="/phrasalverbs">Phrasal Verbs<span></span></Link>
+                <Link className='home-link' to="/auxcontractions">Auxiliary Contractions<span></span></Link>
+                <Link className='home-link' to="/infcontractions">Informal Contractions<span></span></Link>
             </div>
         </div>
     )
