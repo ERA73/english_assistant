@@ -32,7 +32,11 @@ jobs:
           node-version: 20
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd en_assistant
+          npm ci
+          npm install
+
       - name: Build
         run: npm run build
       - name: Setup Pages
