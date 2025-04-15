@@ -1,5 +1,6 @@
 import '../styles/home.css'
 import TextToSpeech from '../components/TextToSpeech'
+import { Link } from 'react-router-dom';
 
 export function HomePage() {
 
@@ -14,9 +15,9 @@ export function HomePage() {
                 <p className='home-text'>We hope this content can help you improve your English skills. Enjoy it!</p>
             </div>
             <div className='home-links'>
-                <a className='home-link' href="/phrasalverbs">Phrasal Verbs<span></span></a>
-                <a className='home-link' href="/auxcontractions">Auxiliary Contractions<span></span></a>
-                <a className='home-link' href="/infcontractions">Informal Contractions<span></span></a>
+                <Link className='home-link' href="/phrasalverbs">Phrasal Verbs<span></span></Link>
+                <Link className='home-link' href="/auxcontractions">Auxiliary Contractions<span></span></Link>
+                <Link className='home-link' href="/infcontractions">Informal Contractions<span></span></Link>
             </div>
         </div>
     )
