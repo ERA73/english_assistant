@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Navigation } from './components/Navigation'
 import { Footer } from './components/Footer'
 import { HomePage} from './pages/HomePage'
 import { PhrasalVerbsPage } from './pages/PhrasalVerbsPage'
 import { AuxiliaryContractionsPage } from './pages/AuxiliaryContractionsPage'
 import { InformalContractionsPage } from './pages/InformalContractionsPage'
+import { IrregularVerbsPage } from './pages/IrregularVerbsPage'
 
 function App() {
   const hideNavbar = (event) => {
@@ -17,7 +18,7 @@ function App() {
   }
   return (
     <div className='main-container' onClick={hideNavbar}>
-      <BrowserRouter>
+      <HashRouter>
         <Navigation />
         <div className='container'>
           <Routes>
@@ -25,9 +26,10 @@ function App() {
             <Route path='/phrasalverbs' element={<PhrasalVerbsPage />} />
             <Route path='/auxcontractions' element={<AuxiliaryContractionsPage />} />
             <Route path='/infcontractions' element={<InformalContractionsPage />} />
+            <Route path='/irregverbs' element={<IrregularVerbsPage />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   )

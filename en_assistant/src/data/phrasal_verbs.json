@@ -1,6 +1,6 @@
 [
-    {"present": ["add", "up"],"pronunciation": {"read":"adap", "show":"adap"},"meaning": ["sumar", "agregar", "creer"]},
-    {"present": ["blow", "up"], "pronunciation": {"read":"blouap", "show":"blouap"}, "meaning": ["inflar", "explotar"]},
+    {"present": ["add", "up"],"pronunciation": {"read":"adap", "show":"adap"},"meaning": ["sumar", "coherente", "lógico", "comprender"]},
+    {"present": ["blow", "up"], "pronunciation": {"read":"bloouap", "show":"blouap"}, "meaning": ["Destrucción", "inflar", "explosión", "enojo intenso"]},
     {"present": ["break", "down"], "pronunciation": {"read":"breikdaun", "show":"breikdaun"}, "meaning": ["romper", "descomponer", "simplificar", "desglosar"]},
     {"present": ["break", "up"], "pronunciation": {"read":"breikap", "show":"breikap"}, "meaning": ["romper", "dividir"]},
     {"present": ["break", "in"], "pronunciation": {"read":"breikin", "show":"breikin"}, "meaning": ["Entrar a la fuerza"]},
@@ -29,7 +29,7 @@
     {"present": ["find", "out"], "pronunciation": {"read":"faindaut", "show":"fain daut"}, "meaning": ["descubrir", "averiguar"]},
     {"present": ["go", "back"], "pronunciation": {"read":"goubak", "show":"goubak"}, "meaning": ["volver a un lugar"]},
     {"present": ["come", "back"], "pronunciation": {"read":"combak", "show":"combak"}, "meaning": ["volver aquí"]},
-    {"present": ["ask", "for"], "pronunciation": {"read":"askhfor", "show":"ask for"}, "meaning": ["pedir"]},
+    {"present": ["ask", "for"], "pronunciation": {"read":"askhfor", "show":"ask for"}, "meaning": ["Pedir", "Requerir", "Demandar", "Solicitar información, ayuda o permiso de manera directa"]},
     {"present": ["put", "on"], "pronunciation": {"read":"puron", "show":"puron"}, "meaning": ["poner"]},
     {"present": ["take", "off"], "pronunciation": {"read":"teicof", "show":"teicof"}, "meaning": ["quitar"]},
     {"present": ["get", "back"], "pronunciation": {"read":"guetbak", "show":"guetbak"}, "meaning": ["volver a un lugar donde se vivió"]},
@@ -48,12 +48,16 @@
     {"present": ["shut", "down"], "pronunciation": {"read":"chutdaun", "show":"chutdaun"}, "meaning": ["apagar completamente"]},
     {"present": ["think", "about"], "pronunciation": {"read":"zincabaut", "show":"zincabaut"}, "meaning": ["pensar algo"]},
     {"present": ["think", "of"], "pronunciation": {"read":"zincaf", "show":"zincavf"}, "meaning": ["pensar en una opción"]},
-    {"present": ["back", "up"], "pronunciation": {"read":"bacap", "show":"bacap"}, "meaning": ["copia de respaldo", "dar marcha atrás en auto", "apoyar"]},
+    {"present": ["back", "up"], "pronunciation": {"read":"bacap", "show":"bacap"}, "meaning": ["copia de respaldo", "dar marcha atrás en auto", "respaldar o apoyar a alguien"]},
     {"present": ["carry", "out"], "pronunciation": {"read":"kerriaut", "show":"kerriaut"}, "meaning": ["llevar a cabo"]},
     {"present": ["drop", "off"], "pronunciation": {"read":"dropof", "show":"dropof"}, "meaning": ["dejar a alguien en un lugar"]},
     {"present": ["point", "out"], "pronunciation": {"read":"pointaut", "show":"pointaut"}, "meaning": ["señalar una idea"]},
     {"present": ["set", "up"], "pronunciation": {"read":"serap", "show":"serap"}, "meaning": ["configuración", "preparar", "fundar", "establecer"]},
     {"present": ["turn", "out"], "pronunciation": {"read":"churnáut", "show":"churnaut"}, "meaning": ["ocurrió de forma inesperada", "direrente a lo esperado"]},
     {"present": ["turn", "up"], "pronunciation": {"read":"churnap", "show":"churnap"}, "meaning": ["llegar o aparecer inesperadamente"]},
-    {"present": ["set", "off", "on"], "pronunciation": {"read":"serofon", "show":"serofon"}, "meaning": ["emprender", "partir"]}
+    {"present": ["set", "off", "on"], "pronunciation": {"read":"serofon", "show":"serofon"}, "meaning": ["emprender", "partir"]},
+    {"present": ["dry", "off"], "pronunciation": {"read":"draiof", "show":"drai of"}, "meaning": ["secar profundamente"]},
+    {"present": ["dry", "out"], "pronunciation": {"read":"draiaut", "show":"drai aut"}, "meaning": ["secar la superficie"]},
+    {"present": ["suck", "up"], "pronunciation": {"read":"socap", "show":"soc ap"}, "meaning": ["aspirar", "chupar", "adular"]},
+    {"present": ["fill", "out"], "pronunciation": {"read":"filaut", "show":"fil aut"}, "meaning": ["rellenar", "completar"]}
 ]

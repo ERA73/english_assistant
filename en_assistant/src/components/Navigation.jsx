@@ -36,6 +36,7 @@ export function Navigation() {
                 <NavLink to="/phrasalverbs" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Phrasal Verbs</NavLink>
                 <NavLink to="/auxcontractions" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Aux Contractions</NavLink>
                 <NavLink to="/infcontractions" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Inf Contractions</NavLink>
+                <NavLink to="/irregverbs" onClick={hideNavbar} className={({ isActive }) => (isActive ? "link-active" : "link")}>Irregular Verbs</NavLink>
                 <button className="nav-btn nav-btn-close" onClick={showNavbar}><FaTimes /></button>
             </nav>
             <button className="nav-btn nav-btn-bars" onClick={showNavbar}><FaBars /></button>
