@@ -58,5 +58,6 @@
     {"present": ["set", "off", "on"], "pronunciation": {"read":"serofon", "show":"serofon"}, "meaning": ["emprender", "partir"]},
     {"present": ["dry", "off"], "pronunciation": {"read":"draiof", "show":"drai of"}, "meaning": ["secar profundamente"]},
     {"present": ["dry", "out"], "pronunciation": {"read":"draiaut", "show":"drai aut"}, "meaning": ["secar la superficie"]},
-    {"present": ["suck", "up"], "pronunciation": {"read":"socap", "show":"soc ap"}, "meaning": ["aspirar", "chupar", "adular"]}
+    {"present": ["suck", "up"], "pronunciation": {"read":"socap", "show":"soc ap"}, "meaning": ["aspirar", "chupar", "adular"]},
+    {"present": ["fill", "out"], "pronunciation": {"read":"filaut", "show":"fil aut"}, "meaning": ["rellenar", "completar"]}
 ]
