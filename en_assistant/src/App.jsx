@@ -6,6 +6,7 @@ import { PhrasalVerbsPage } from './pages/PhrasalVerbsPage'
 import { AuxiliaryContractionsPage } from './pages/AuxiliaryContractionsPage'
 import { InformalContractionsPage } from './pages/InformalContractionsPage'
 import { IrregularVerbsPage } from './pages/IrregularVerbsPage'
+import { TasksPage } from './pages/TasksPage'
 
 function App() {
   const hideNavbar = (event) => {
@@ -27,6 +28,7 @@ function App() {
             <Route path='/auxcontractions' element={<AuxiliaryContractionsPage />} />
             <Route path='/infcontractions' element={<InformalContractionsPage />} />
             <Route path='/irregverbs' element={<IrregularVerbsPage />} />
+            <Route path='/tasks' element={<TasksPage />} />
           </Routes>
         </div>
       </HashRouter>
