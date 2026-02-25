@@ -1,0 +1,115 @@
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.tasks-title {
+  font-size: 2rem;
+  color: var(--titleColor);
+  text-align: center;
+}
+
+.tasks-description {
+  font-size: 1.1rem;
+  color: var(--textColor);
+  text-align: center;
+  max-width: 600px;
+}
+
+.tasks-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--secondaryColor);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.tasks-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.tasks-label {
+  font-size: 1rem;
+  color: var(--emphasisColor);
+}
+
+.tasks-input,
+.tasks-textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--emphasisColor);
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  outline: none;
+}
+
+.tasks-input:focus,
+.tasks-textarea:focus {
+  border-color: lightskyblue;
+  box-shadow: 0 0 4px lightskyblue;
+}
+
+.tasks-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.tasks-btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: midnightblue;
+  color: var(--emphasisColor);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tasks-btn:hover {
+  background-color: var(--emphasisColor);
+  color: midnightblue;
+}
+
+.tasks-calendar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.tasks-calendar-links h3 {
+  color: var(--titleColor);
+  font-size: 1.3rem;
+}
+
+.tasks-calendar-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--emphasisColor);
+  border-radius: 10px;
+  background-color: midnightblue;
+  padding: 8px 16px;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.tasks-calendar-link:hover {
+  color: midnightblue;
+  background-color: var(--emphasisColor);
+}

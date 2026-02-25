@@ -18,6 +18,7 @@ export function HomePage() {
                 <Link className='home-link' to="/phrasalverbs">Phrasal Verbs<span></span></Link>
                 <Link className='home-link' to="/auxcontractions">Auxiliary Contractions<span></span></Link>
                 <Link className='home-link' to="/infcontractions">Informal Contractions<span></span></Link>
+                <Link className='home-link' to="/tasks">Tasks<span></span></Link>
             </div>
         </div>
     )
